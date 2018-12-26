@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreverificaAvatar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-dy-wsh">
+                                <rect key="frame" x="40" y="140" width="315" height="407"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eSm-11-Zk2">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="407"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testa0" translatesAutoresizingMaskIntoConstraints="NO" id="pV2-Xa-0qC">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="102"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="occhi4" translatesAutoresizingMaskIntoConstraints="NO" id="1J0-Dg-d32">
+                                                <rect key="frame" x="0.0" y="102" width="157.5" height="101.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bocca2" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-g0-zF9">
+                                                <rect key="frame" x="0.0" y="203.5" width="157.5" height="102"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corpo0" translatesAutoresizingMaskIntoConstraints="NO" id="gjU-7N-2uw">
+                                                <rect key="frame" x="0.0" y="305.5" width="157.5" height="101.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1J0-Dg-d32" firstAttribute="leading" secondItem="eSm-11-Zk2" secondAttribute="leading" id="HcX-cK-7rw"/>
+                                            <constraint firstAttribute="trailing" secondItem="1J0-Dg-d32" secondAttribute="trailing" id="gXL-EA-5Jd"/>
+                                            <constraint firstItem="wsH-g0-zF9" firstAttribute="top" secondItem="1J0-Dg-d32" secondAttribute="bottom" id="gkV-mi-0fZ"/>
+                                            <constraint firstItem="1J0-Dg-d32" firstAttribute="top" secondItem="pV2-Xa-0qC" secondAttribute="bottom" id="jbZ-mB-Q1R"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-CU-tzn">
+                                        <rect key="frame" x="157.5" y="0.0" width="157.5" height="407"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-kC-0lQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="81.5"/>
+                                                <state key="normal" title="Testa"/>
+                                                <connections>
+                                                    <action selector="btnTesta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eq2-Vb-Mt2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-cB-MlH">
+                                                <rect key="frame" x="0.0" y="81.5" width="157.5" height="81.5"/>
+                                                <state key="normal" title="Occhi"/>
+                                                <connections>
+                                                    <action selector="btnOcchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWN-Q5-0iA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJk-5M-BUl">
+                                                <rect key="frame" x="0.0" y="163" width="157.5" height="81"/>
+                                                <state key="normal" title="Bocca"/>
+                                                <connections>
+                                                    <action selector="btnBocca:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFn-D1-uHG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nf-oc-NAu">
+                                                <rect key="frame" x="0.0" y="244" width="157.5" height="81.5"/>
+                                                <state key="normal" title="Corpo"/>
+                                                <connections>
+                                                    <action selector="btnCorpo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caf-M5-Zws"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcR-At-q2d">
+                                                <rect key="frame" x="0.0" y="325.5" width="157.5" height="81.5"/>
+                                                <state key="normal" title="Random"/>
+                                                <connections>
+                                                    <action selector="Shuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ky5-dS-q1c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sma-dy-wsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8w0-kb-IgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sma-dy-wsh" secondAttribute="bottom" constant="120" id="OKb-ZL-N4f"/>
+                            <constraint firstItem="Sma-dy-wsh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="aaL-e2-nMR"/>
+                            <constraint firstAttribute="trailing" secondItem="Sma-dy-wsh" secondAttribute="trailing" constant="20" id="wje-Hr-dEK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="LeadingOcchiConstant" destination="HcX-cK-7rw" id="J1b-Nf-Nii"/>
+                        <outlet property="TralingOcchiConstant" destination="gXL-EA-5Jd" id="Yo5-y8-x9b"/>
+                        <outlet property="bocca" destination="wsH-g0-zF9" id="o1w-ho-AqM"/>
+                        <outlet property="corpo" destination="gjU-7N-2uw" id="OGQ-A3-JRl"/>
+                        <outlet property="occhi" destination="1J0-Dg-d32" id="Ygf-T5-g4H"/>
+                        <outlet property="testa" destination="pV2-Xa-0qC" id="mZS-VW-cnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bocca2" width="203" height="49"/>
+        <image name="corpo0" width="203" height="91"/>
+        <image name="occhi4" width="203" height="69"/>
+        <image name="testa0" width="203" height="79"/>
+    </resources>
+</document>

@@ -1,0 +1,23 @@
+{
+    "testa": [
+      "testa0.png"
+    ],
+	"occhi": [
+      "occhi0.png",
+      "occhi1.png",
+      "occhi2.png",
+	  "occhi3.png",
+	  "occhi4.png"
+    ],
+    "bocca": [
+      "bocca0.png",
+      "bocca1.png",
+      "bocca2.png",
+	  "bocca3.png",
+	  "bocca4.png"
+    ],
+    "corpo": [
+      "corpo0.png",
+      "corpo1.png"
+    ]
+ }
